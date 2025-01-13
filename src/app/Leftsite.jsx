@@ -37,13 +37,13 @@ export default function Leftsite({
   return (
     <div className="bg-[#F3F4F6]   w-[50vw] h-[100vh] flex justify-center items-center  ">
       <div className="bg-[rgba(255,255,255,0.75)] w-[400px] h-[80vh] rounded-[48px] absolute p-[40px]">
-        <div className="flex justify-start mr-[20px]">
-          <p className=" flex  text-gray-500 text-lg not-italic font-medium leading-none ml-[20px] ">
-            {date}
-          </p>
-        </div>
-        <div className="">
-          <h1 className="text-[50px] flex font-extrabold text-5xl text-black  ">
+        <div className="flex justify-start mr-[20px]"></div>
+        <p className=" flex  text-gray-500 text-lg not-italic font-medium leading-none ml-[20px] ">
+          {date}
+        </p>
+
+        <div className=" ">
+          <h1 className="text-[50px] flex font-extrabold text-5xl text-black mt-[40px] justify-center h-[90px]">
             {changeCity}
             <svg
               className="mt-[15px] "
@@ -74,11 +74,12 @@ export default function Leftsite({
         </div>
 
         {/* <Sun sun={sun} setSunny={setSunny} /> */}
-        {photo()}
-        <h2 className="text-gray-600 text-8xl font-extrabold  flex  mt-[16px]  ml-[10px]">
+        <div className="m-auto mt-[30px]">{photo()}</div>
+
+        <h2 className="text-gray-600 text-8xl font-extrabold  flex  mt-[40px]  ml-[10px]">
           {weather}
         </h2>
-        <h1 className="text-[#FF8E27] text-2xl font-extrabold ml-[20px]">
+        <h1 className="text-[#FF8E27] text-2xl font-extrabold ml-[20px] mt-[30px]">
           {condition}
         </h1>
         <Icons />

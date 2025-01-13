@@ -24,6 +24,8 @@ export default function Rightsite({
         return <img src="/Rain.png" alt="" />;
       case test.includes("cloud"):
         return <img src="/moon.png" alt="" />;
+      case test.includes("snow"):
+        return <img src="/moonSnow.png" alt="" />;
     }
   };
   console.log({ condition });
@@ -31,10 +33,10 @@ export default function Rightsite({
     <div className="bg-[#0F141E]  w-[50vw] h-[100vh] flex justify-center items-center">
       <div className="bg-[rgba(17,24,39)] w-[400px] h-[80vh] rounded-[48px] p-[40px]">
         <div>
-          <p className="flex  text-gray-500 text-lg not-italic font-medium leading-none mt-[10px] ml-[20px]">
+          <p className="flex  text-gray-500 text-lg not-italic font-medium leading-none  ml-[20px] ">
             {date}
           </p>
-          <h1 className="text-[50px] flex font-extrabold text-5xl">
+          <h1 className="text-[50px] flex font-extrabold text-5xl justify-center mt-[40px] h-[90px]">
             {changeCity}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,11 +57,11 @@ export default function Rightsite({
         </div>
 
         {/* <Moon moon={moon} setMoon={setMoon} /> */}
-        <div className="m-auto">{Case(condition)}</div>
-        <h2 className="text-gray-600 text-8xl font-extrabold  flex  mt-[16px]  ml-[10px]">
+        <div className="m-auto mt-[30px]">{Case(condition)}</div>
+        <h2 className="text-gray-600 text-8xl font-extrabold  flex  mt-[40px]  ml-[10px]">
           {rweather}
         </h2>
-        <h3 className="text-[#FF8E27] text-2xl font-extrabold ml-[20px] ">
+        <h3 className="text-[#FF8E27] text-2xl font-extrabold ml-[20px] mt-[30px] ">
           {none}
         </h3>
         <Iconsmoon />
